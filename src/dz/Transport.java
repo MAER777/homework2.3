@@ -1,6 +1,6 @@
 package dz;
 
-public class Transport {
+public class Transport implements TransportWorks {
     private String modelName;
 
     private int wheelsCount;
@@ -28,20 +28,21 @@ public class Transport {
 
     @Override
     public String toString() {
-        return "Transport{" +
-                "modelName='" + modelName + '\'' +
-                ", wheelsCount=" + wheelsCount +
-                '}';
+        return "Модель транспорта: " + modelName + '\'' +
+                ", Количество колёс: " + wheelsCount;
     }
 
+    @Override
     public void updateTyre() {
         System.out.println("Меняем покрышку");
     }
 
+    @Override
     public void checkEngine() {
         System.out.println("Проверяем двигатель");
     }
 
+    @Override
     public void checkTrailer() {
         System.out.println("Проверяем прицеп");
     }
