@@ -17,7 +17,7 @@ public class Main {
 
         Truck [] trucks = {
                 new Truck("Интернационал 9800", 10),
-                new Truck("Вольво ВНР", 12),
+                new Truck("Вольво ВНР1", 12),
         };
 
 
