@@ -1,6 +1,6 @@
 package dz;
 
-public class Transport implements TransportWorks {
+public class Transport implements TransportInterface {
     private String modelName;
 
     private int wheelsCount;
@@ -10,18 +10,22 @@ public class Transport implements TransportWorks {
         this.wheelsCount = wheelsCount;
     }
 
+    @Override
     public String getModelName() {
         return modelName;
     }
 
+    @Override
     public void setModelName(String modelName) {
         this.modelName = modelName;
     }
 
+    @Override
     public int getWheelsCount() {
         return wheelsCount;
     }
 
+    @Override
     public void setWheelsCount(int wheelsCount) {
         this.wheelsCount = wheelsCount;
     }
@@ -30,20 +34,5 @@ public class Transport implements TransportWorks {
     public String toString() {
         return "Модель транспорта: " + modelName + '\'' +
                 ", Количество колёс: " + wheelsCount;
-    }
-
-    @Override
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
-    }
-
-    @Override
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
-    }
-
-    @Override
-    public void checkTrailer() {
-        System.out.println("Проверяем прицеп");
     }
 }

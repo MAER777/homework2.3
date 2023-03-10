@@ -1,7 +1,6 @@
 package dz;
 
-public class ServiceStation implements ServiceStationInterface {
-
+public class ServiceStationIntClient implements ServiceStationInterface {
     @Override
     public void printServiceStation(Transport[] transports) {
         System.out.println("Всего транспорта у нас: " + transports.length);
@@ -20,11 +19,13 @@ public class ServiceStation implements ServiceStationInterface {
         truck.checkEngine();
         truck.checkTrailer();
     }
+
     @Override
     public void checkBicycle(Bicycle bicycle) {
         System.out.println(bicycle);
         bicycle.updateTyre();
     }
+
     @Override
     public void checkCar(Car car) {
         System.out.println(car);
