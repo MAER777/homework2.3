@@ -1,6 +1,6 @@
 package dz;
 
-public class MotorTransport extends  WheelyTransport{
+public abstract class MotorTransport extends  WheelyTransport{
 
     public MotorTransport(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);

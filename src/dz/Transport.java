@@ -25,7 +25,7 @@ public class Transport implements TransportInterface {
         return wheelsCount;
     }
 
-    @Overrideцу
+    @Override
     public void setWheelsCount(int wheelsCount) {
         this.wheelsCount = wheelsCount;
     }
